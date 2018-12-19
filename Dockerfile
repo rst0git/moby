@@ -43,7 +43,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 FROM runtime-dev AS criu
 # Install CRIU for checkpoint/restore support
-ENV CRIU_VERSION 3.6
+
+ENV CRIU_VERSION 3.11
 RUN apt-get update && apt-get install -y --no-install-recommends \
 	g++ \
 	gcc \
